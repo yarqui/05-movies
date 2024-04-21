@@ -1,6 +1,7 @@
 {
   "name": "goit-react-woolf-hw-05-movies",
   "private": true,
+  "homepage": "https://yarqui.github.io/goit-react-woolf-hw-05-movies/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
