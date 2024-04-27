@@ -31,7 +31,7 @@ const MoviesPage = () => {
         }
         setMovies(res);
       })
-      .catch((error) => console.log(error.message))
+      .catch((error) => console.log(error))
       .finally(() => setIsLoading(false));
 
     return () => {

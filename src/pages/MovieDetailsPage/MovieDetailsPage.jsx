@@ -33,7 +33,7 @@ const MovieDetailsPage = () => {
       .then((movie) => {
         setMovie(movie);
       })
-      .catch((error) => console.error(error.message));
+      .catch((error) => console.error(error));
 
     return () => {
       controller.abort();
@@ -94,12 +94,14 @@ const MovieDetailsPage = () => {
         <NavLink
           className="rounded-full px-4 py-2 transition-colors duration-200 hover:bg-slate-800 hover:text-white"
           to={PAGE_NAMES.cast}
+          state={{ from: backLink }}
         >
           Cast
         </NavLink>
         <NavLink
           className="rounded-full px-4 py-2 transition-colors duration-200 hover:bg-slate-800 hover:text-white"
           to={PAGE_NAMES.reviews}
+          state={{ from: backLink }}
         >
           Reviews
         </NavLink>
