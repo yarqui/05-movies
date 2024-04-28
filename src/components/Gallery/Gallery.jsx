@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import GalleryItem from "../GalleryItem/GalleryItem";
 
 const Gallery = ({ movies, css }) => {
-  const classes = `${css || ""} mb-0 ml-auto mr-auto mt-0 grid list-none gap-5 p-0`;
+  const classes = `${css || ""} mb-5 ml-auto mr-auto grid list-none gap-5 p-0`;
 
   return (
     <ul className={classes}>

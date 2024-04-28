@@ -38,7 +38,7 @@ const Cast = () => {
   return (
     <>
       {credits?.length > 0 && (
-        <ul className="grid-cols-gallery-cast mb-0 ml-auto mr-auto mt-0 grid list-none gap-5 p-0">
+        <ul className="grid-cols-gallery-cast mb-5 grid list-none gap-5 p-0">
           {credits?.map((castMember) => (
             <CastItem key={castMember.id} castMember={castMember} />
           ))}

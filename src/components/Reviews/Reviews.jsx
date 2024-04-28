@@ -31,7 +31,7 @@ const Reviews = () => {
   return (
     <>
       {movieReviews?.length > 0 && (
-        <ul className="flex max-w-screen-lg flex-col gap-5">
+        <ul className="mb-5 flex max-w-screen-lg flex-col gap-5">
           {movieReviews.map(({ id, author, content }) => (
             <li
               className="rounded-md bg-white p-4 shadow-md transition-colors hover:bg-slate-50"
